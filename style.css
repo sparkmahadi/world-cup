@@ -5,9 +5,13 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* ---------first section style---------- */
+
 .container {
     display: flex;
     justify-content: center;
@@ -29,6 +33,8 @@ body {
 
 .header-image {
     width: 60%;
+    display: flex;
+    justify-content: end;
 }
 
 .header-image img {
@@ -88,6 +94,12 @@ body {
 }
 
 .main-part {
+    display: flex;
+    justify-content: center;
+}
+
+
+.contents {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     column-gap: 1em;
@@ -95,17 +107,21 @@ body {
     width: 70%;
 }
 
-.contents {
-    border: 1px solid #E8E8E8;
-}
-
 .content {
     display: flex;
     flex-direction: column;
+    width: 15em;
+
 }
 
 .content img {
     width: 15em;
+}
+
+.content-info {
+    border: 1px solid tomato;
+    margin-top: -7px;
+    border-top: none;
 }
 
 .go-button {
@@ -121,7 +137,6 @@ body {
 
 .content-heading {
     text-align: left;
-    font-size: 1.1em;
     margin: 0.5em 1em;
 }
 
@@ -141,4 +156,191 @@ body {
 .duration div,
 .comments div {
     margin-right: 1em;
+}
+
+/* ------------------footer styles------------------ */
+
+footer {
+    background-color: #161616;
+    color: white;
+    text-align: center;
+    padding: 90px 0px;
+}
+
+hr {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    margin: 50px 60px;
+}
+
+.footer-down {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 250px;
+}
+
+
+
+/* --------------------
+media styles
+-------------- */
+
+@media screen and (max-width:688px) {
+
+    header {
+        justify-items: center;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        background-color: #161616;
+        border-radius: 30px;
+        margin: 5px 15px;
+    }
+
+    .section-title {
+        width: 70%;
+        font-size: 2em;
+        align-self: center;
+    }
+
+    .header-writing {
+        width: 90%;
+        color: white;
+        text-align: center;
+    }
+
+    .header-writing p {
+        width: 70%;
+    }
+
+    .button-icon {
+        display: flex;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .header-image {
+        width: 70%;
+        display: flex;
+    }
+
+    .header-image img {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .button-link {
+        text-decoration: none;
+        color: white;
+    }
+
+    .button-icon {
+        display: flex;
+        align-items: center;
+        color: white;
+        background-color: #dd0000;
+        width: 35%;
+        margin-top: 30px;
+        padding: 0.5em 0.2em 0.5em 1em;
+        border-radius: 5px;
+    }
+
+    .fa-solid.fa-angle-right {
+        margin-left: 1em;
+    }
+
+    /*------------- second section style------------- */
+
+    .blogs {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 30px;
+    }
+
+    .side-nav {
+        margin-bottom: 50px;
+    }
+
+    .side-nav a {
+        text-decoration: none;
+        background-color: white;
+        margin: 1.5em;
+        padding: 1em;
+        border-radius: 0.5em;
+    }
+
+    .main-part {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    body {
+        display: flex;
+        align-self: center;
+    }
+
+    .contents {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        column-gap: 1em;
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+
+    .content img {
+        width: 100%;
+    }
+
+    .content-info {
+        border: 1px solid tomato;
+        margin-top: -7px;
+        border-top: none;
+    }
+
+    .go-button {
+        width: 5em;
+        padding: 0.2em 1em;
+        margin-top: 1em;
+        margin-left: 1.2em;
+        font-size: 0.9em;
+        border: 1px solid black;
+        border-radius: 0.3em;
+        background-color: white;
+    }
+
+    .content-heading {
+        text-align: left;
+        margin: 0.5em 1em;
+    }
+
+    .duration-comments {
+        display: flex;
+        margin-left: 1.2em;
+        align-items: center;
+        margin-top: -1em;
+    }
+
+    .duration,
+    .comments {
+        display: flex;
+        align-items: center;
+    }
+
+    .duration div,
+    .comments div {
+        margin-right: 1em;
+    }
+
 }
