@@ -1,0 +1,144 @@
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@500&display=swap');
+
+/* common styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+}
+
+/* ---------first section style---------- */
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: #161616;
+    margin: 1.5em 8em 7em 8em;
+    border-radius: 30px;
+}
+
+.section-title {
+    font-size: 3em;
+    margin-bottom: 0.3em;
+}
+
+.header-writing {
+    width: 40%;
+    padding: 2em 0.3em 2em 5em;
+    color: white;
+}
+
+.header-image {
+    width: 60%;
+}
+
+.header-image img {
+    width: 531px;
+    height: 563px;
+    display: flex;
+    align-content: flex-end;
+}
+
+.button-link {
+    text-decoration: none;
+    color: white;
+}
+
+.button-icon {
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: #dd0000;
+    width: 35%;
+    margin-top: 30px;
+    padding: 0.5em 0.2em 0.5em 1em;
+    border-radius: 5px;
+}
+
+.fa-solid.fa-angle-right {
+    margin-left: 1em;
+}
+
+/*------------- second section style------------- */
+
+.blogs {
+    display: flex;
+    justify-content: center;
+    /* background-color: #161616; */
+    margin: 1.5em 8em 7em 7.8em;
+    border-radius: 30px;
+}
+
+.side-nav {
+    width: 300px;
+    height: 316px;
+    display: flex;
+    flex-direction: column;
+    background-color: #161616;
+    text-align: center;
+    border-radius: 0.8em;
+    margin-right: 1.2em;
+}
+
+.side-nav a {
+    text-decoration: none;
+    background-color: white;
+    margin: 1.5em;
+    padding: 1em;
+    border-radius: 0.5em;
+}
+
+.main-part {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1em;
+    row-gap: 1em;
+    width: 70%;
+}
+
+.contents {
+    border: 1px solid #E8E8E8;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+}
+
+.content img {
+    width: 15em;
+}
+
+.go-button {
+    width: 5em;
+    padding: 0.2em 1em;
+    margin-top: 1em;
+    margin-left: 1.2em;
+    font-size: 0.9em;
+    border: 1px solid black;
+    border-radius: 0.3em;
+    background-color: white;
+}
+
+.content-heading {
+    text-align: left;
+    font-size: 1.1em;
+    margin: 0.5em 1em;
+}
+
+.duration-comments {
+    display: flex;
+    margin-left: 1.2em;
+    align-items: center;
+    margin-top: -1em;
+}
+
+.duration,
+.comments {
+    display: flex;
+    align-items: center;
+}
+
+.duration div,
+.comments div {
+    margin-right: 1em;
+}
