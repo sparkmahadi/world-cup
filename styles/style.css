@@ -284,7 +284,7 @@ media styles - Mobile View
 
     .header-writing p {
         white-space: nowrap;
-        overflow: hidden;
+        overflow:scroll;
         text-overflow: ellipsis;
     }
 
@@ -571,5 +571,6 @@ media styles - Tablet View
     .blogs {
         margin: 0 auto;
         width: 85%;
+        margin-bottom: 70px;
     }
 }
