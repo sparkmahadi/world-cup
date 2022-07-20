@@ -7,12 +7,51 @@ body {
     margin: 0;
 }
 
+/* ---------------------animations------------------- */
+
+/* -------------animation section title-------------------- */
+@keyframes slider {
+    25% {
+        color: white;
+    }
+
+    50% {
+        color: cadetblue;
+    }
+
+    75% {
+        color: rgb(24, 24, 221);
+    }
+
+    100% {
+        color: cadetblue;
+    }
+}
+
+/* --------------------animation - football -------------------- */
+@keyframes rotating {
+
+    100% {
+        left: 400px;
+        top: 330px;
+        transform: rotate(1500deg);
+    }
+}
+
+.fa-futbol {
+    color: white;
+    font-size: 60px;
+    position: relative;
+    animation: rotating 5s ease-in-out 0.2s infinite alternate;
+    animation-play-state: running;
+}
+
 /* ---------first section style---------- */
 
 .container {
     display: flex;
     justify-content: center;
-    background-color: #161616;
+    background-color: #050427;
     margin: 40px 140px 70px 140px;
     border-radius: 30px;
 }
@@ -20,6 +59,9 @@ body {
 .section-title {
     font-size: 3em;
     margin-bottom: 0.3em;
+    animation: slider 2s ease-out 2s infinite alternate;
+    animation-play-state: running;
+
 }
 
 .header-writing {
@@ -56,6 +98,12 @@ body {
     margin-top: 30px;
     padding: 0.5em 0.2em 0.5em 1em;
     border-radius: 5px;
+    transition: width 0.5s, font-size 0.5s;
+}
+
+.button-icon:hover {
+    width: 50%;
+    font-size: 25px;
 }
 
 .fa-solid.fa-angle-right {
@@ -77,7 +125,7 @@ body {
     height: 316px;
     display: flex;
     flex-direction: column;
-    background-color: #161616;
+    background-color: #050427;
     text-align: center;
     border-radius: 0.8em;
     margin-right: 1.2em;
@@ -173,7 +221,7 @@ body {
 /* ------------------footer styles------------------ */
 
 footer {
-    background-color: #161616;
+    background-color: #050427;
     color: white;
     text-align: center;
     padding: 90px 0px;
@@ -207,6 +255,10 @@ media styles - Mobile View
 -------------- */
 
 @media screen and (max-width:480px) {
+    .fa-futbol {
+        display: none;
+        animation-play-state: paused;
+    }
 
     .container {
         display: block;
@@ -355,6 +407,10 @@ media styles - Tablet View
 -------------- */
 
 @media screen and (min-width:481px) and (max-width:768px) {
+    .fa-futbol {
+        display: none;
+        animation-play-state: paused;
+    }
 
     .container {
         display: flex;
@@ -370,7 +426,6 @@ media styles - Tablet View
         padding: 10px;
         color: white;
         text-align: left;
-        margin-right: ;
 
     }
 
