@@ -218,6 +218,10 @@ body {
     margin-right: 1em;
 }
 
+#view-button {
+    display: none;
+}
+
 /* ------------------footer styles------------------ */
 
 footer {
@@ -376,6 +380,7 @@ media styles - Mobile View
     }
 
     footer {
+        margin-top: 40px;
         padding: 20px 0px;
     }
 
@@ -520,6 +525,19 @@ media styles - Tablet View
         width: 100%;
     }
 
+    #view-button {
+        display: block;
+        margin: 0 auto;
+        font-size: 20px;
+        color: white;
+        background-color: #DD0000;
+        border: none;
+        border-radius: 5px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        padding: 10px 20px;
+    }
+
     footer {
         padding: 20px 0px;
     }
@@ -542,12 +560,14 @@ media styles - Tablet View
 
 /* -----------------for large screens------------------ */
 @media screen and (min-width:1367px) and (max-width:1980px) {
-    .blogs img{
+    .blogs img {
         width: 100%;
     }
-    .content{
+
+    .content {
         width: 100%
     }
+
     .blogs {
         margin: 0 auto;
         width: 85%;
