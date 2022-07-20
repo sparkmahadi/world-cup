@@ -74,6 +74,8 @@
     }
 }
 
+/* ---------------------tablet devices style------------------ */
+
 @media screen and (min-width:481px) and (max-width:768px) {
     .matches {
         display: flex;
@@ -88,16 +90,22 @@
         grid-template-columns: repeat(2, 1fr);
         margin: 30px;
     }
+
+    #view-button {
+        margin-top: 0px;
+    }
 }
 
 /* -----------------for large screens------------------ */
 @media screen and (min-width:1367px) and (max-width:1980px) {
-    .vs-flag img{
+    .vs-flag img {
         width: 100%;
     }
-    .cards{
+
+    .cards {
         width: 100%
     }
+
     .matches {
         margin: 0 auto;
         width: 85%;
