@@ -196,6 +196,10 @@ hr {
     text-decoration: none;
 }
 
+.social-links {
+    display: none;
+}
+
 
 
 /* --------------------
@@ -205,9 +209,6 @@ media styles
 @media screen and (max-width:480px) {
 
     .container {
-        /* display: flex;
-        flex-direction: column;
-        justify-content: center; */
         display: block;
         background-color: #161616;
         border-radius: 15px;
@@ -232,17 +233,10 @@ media styles
     }
 
     .section-title {
-        /* width: 70%; */
         font-size: 30px;
         text-align: center;
         margin: 0;
     }
-
-    /* .header-writing p {
-        width: 70%;
-    } */
-
-
 
     .header-image {
         width: 70%;
@@ -341,5 +335,17 @@ media styles
 
     .footer-links div {
         padding: 20px;
+    }
+
+
+    .social-links {
+        display: flex;
+        justify-content: space-around;
+        margin: 30px 100px;
+    }
+
+    .social-links a {
+        font-size: 30px;
+        color: white;
     }
 }
