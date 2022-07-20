@@ -2,13 +2,8 @@
 .matches {
     display: flex;
     justify-content: center;
-    /* background-color: #161616; */
     margin: 40px 140px 70px 140px;
     border-radius: 30px;
-}
-
-#side-nav {
-    margin-right: 11px;
 }
 
 .cards {
@@ -40,6 +35,9 @@
 }
 
 /* ------------------Side nav style-------------------*/
+#side-nav {
+    margin-right: 11px;
+}
 .anchor-1 {
     color: white;
     background-color: red;
@@ -72,8 +70,11 @@
     .card {
         margin: 0px 15px 15px 15px;
     }
+    .anchor-3{
+        border: 1px solid gray;
+    }
 }
-
+/* ---------------Tablet devices style----------------- */
 @media screen and (min-width:481px) and (max-width:768px) {
     .matches {
         display: flex;

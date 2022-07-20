@@ -1,15 +1,13 @@
-/* fonts */
+/* ---------------------fonts ----------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@500&display=swap');
 
-/* common styles */
+/*----------------- common styles ----------------------*/
 body {
     font-family: 'Poppins', sans-serif;
     margin: 0;
 }
 
-/* ---------------------animations------------------- */
-
-/* -------------animation section title-------------------- */
+/* -------------animation - section title-------------------- */
 @keyframes slider {
     25% {
         color: white;
@@ -46,7 +44,7 @@ body {
     animation-play-state: running;
 }
 
-/* ---------first section style---------- */
+/* ---------Header section styles---------- */
 
 .container {
     display: flex;
@@ -110,15 +108,7 @@ body {
     margin-left: 1em;
 }
 
-/*------------- second section style------------- */
-
-.blogs {
-    display: flex;
-    justify-content: center;
-    /* background-color: #161616; */
-    margin: 40px 120px 70px 120px;
-    border-radius: 30px;
-}
+/*------------- second section - navigation part------------- */
 
 .side-nav {
     width: 300px;
@@ -152,11 +142,17 @@ body {
     background-color: #dd0000;
 }
 
+/*------------- second section - Blogs part------------- */
 .main-part {
     display: flex;
     justify-content: center;
 }
-
+.blogs {
+    display: flex;
+    justify-content: center;
+    margin: 40px 120px 70px 120px;
+    border-radius: 30px;
+}
 
 .contents {
     display: grid;
@@ -218,6 +214,7 @@ body {
     margin-right: 1em;
 }
 
+/* ---------Special element for tablet devices----------- */
 #view-button {
     display: none;
 }
@@ -247,17 +244,15 @@ hr {
     color: white;
     text-decoration: none;
 }
-
+/* -------------Special elements for mobile devices--------------- */
 .social-links {
     display: none;
 }
 
 
+/* -------------media styles - Mobile View------------- */
 
-/* --------------------
-media styles - Mobile View
--------------- */
-
+/*------------- first section - header part------------- */
 @media screen and (max-width:480px) {
     .fa-futbol {
         display: none;
@@ -284,8 +279,11 @@ media styles - Mobile View
 
     .header-writing p {
         white-space: nowrap;
-        overflow:scroll;
+        overflow:hidden;
         text-overflow: ellipsis;
+    }
+    .header-writing p:hover{
+        white-space: inherit;
     }
 
     .section-title {
@@ -319,15 +317,7 @@ media styles - Mobile View
         margin-left: 1em;
     }
 
-    /*------------- second section style------------- */
-
-    .blogs {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        border-radius: 30px;
-        margin: 0;
-    }
+/*------------- second section - navigation part------------- */
 
     .side-nav {
         margin: 20px 10px;
@@ -359,7 +349,13 @@ media styles - Mobile View
         flex-direction: column;
         justify-content: center;
     }
-
+    .blogs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 30px;
+        margin: 0;
+    }
 
     .contents {
         grid-template-columns: repeat(1, 1fr);
@@ -407,10 +403,9 @@ media styles - Mobile View
     }
 }
 
-/* --------------------
-media styles - Tablet View
--------------- */
+/* --------------------media styles - Tablet View-------------- */
 
+/*------------- first section - header part------------- */
 @media screen and (min-width:481px) and (max-width:768px) {
     .fa-futbol {
         display: none;
@@ -465,7 +460,7 @@ media styles - Tablet View
         margin-left: 1em;
     }
 
-    /*------------- second section style------------- */
+/*------------- second section - navigation part------------- */
 
     .blogs {
         display: flex;
